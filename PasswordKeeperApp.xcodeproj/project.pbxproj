@@ -15,6 +15,8 @@
 		7AB54D5D1BC8FF9A008F56EF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AB54D5C1BC8FF9A008F56EF /* Images.xcassets */; };
 		7AB54D601BC8FF9A008F56EF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AB54D5E1BC8FF9A008F56EF /* LaunchScreen.xib */; };
 		7AB54D6C1BC8FF9A008F56EF /* PasswordKeeperAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB54D6B1BC8FF9A008F56EF /* PasswordKeeperAppTests.swift */; };
+		7AB54D7A1BC911F6008F56EF /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB54D791BC911F6008F56EF /* FormViewController.swift */; };
+		7AB54D7C1BC92858008F56EF /* Passwords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB54D7B1BC92858008F56EF /* Passwords.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		7AB54D651BC8FF9A008F56EF /* PasswordKeeperAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PasswordKeeperAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AB54D6A1BC8FF9A008F56EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7AB54D6B1BC8FF9A008F56EF /* PasswordKeeperAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordKeeperAppTests.swift; sourceTree = "<group>"; };
+		7AB54D791BC911F6008F56EF /* FormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
+		7AB54D7B1BC92858008F56EF /* Passwords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Passwords.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,12 +87,14 @@
 			children = (
 				7AB54D501BC8FF9A008F56EF /* AppDelegate.swift */,
 				7AB54D551BC8FF9A008F56EF /* MasterViewController.swift */,
+				7AB54D791BC911F6008F56EF /* FormViewController.swift */,
 				7AB54D571BC8FF9A008F56EF /* DetailViewController.swift */,
 				7AB54D591BC8FF9A008F56EF /* Main.storyboard */,
 				7AB54D5C1BC8FF9A008F56EF /* Images.xcassets */,
 				7AB54D5E1BC8FF9A008F56EF /* LaunchScreen.xib */,
 				7AB54D521BC8FF9A008F56EF /* PasswordKeeperApp.xcdatamodeld */,
 				7AB54D4E1BC8FF9A008F56EF /* Supporting Files */,
+				7AB54D7B1BC92858008F56EF /* Passwords.swift */,
 			);
 			path = PasswordKeeperApp;
 			sourceTree = "<group>";
@@ -218,6 +224,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AB54D7C1BC92858008F56EF /* Passwords.swift in Sources */,
+				7AB54D7A1BC911F6008F56EF /* FormViewController.swift in Sources */,
 				7AB54D541BC8FF9A008F56EF /* PasswordKeeperApp.xcdatamodeld in Sources */,
 				7AB54D511BC8FF9A008F56EF /* AppDelegate.swift in Sources */,
 				7AB54D561BC8FF9A008F56EF /* MasterViewController.swift in Sources */,

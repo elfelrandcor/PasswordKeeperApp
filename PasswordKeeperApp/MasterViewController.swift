@@ -23,8 +23,8 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
         // Do any additional setup after loading the view, typically from a nib.
         self.navigationItem.leftBarButtonItem = self.editButtonItem()
 
-        let addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "insertNewObject:")
-        self.navigationItem.rightBarButtonItem = addButton
+        let showForm = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "navigateToForm")
+        self.navigationItem.rightBarButtonItem = showForm
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,6 +32,12 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
         // Dispose of any resources that can be recreated.
     }
 
+    func navigateToForm(sender: AnyObject) {
+        let formViewController = self.storyboard?.instantiateViewControllerWithIdentifier("FormViewController") as! FormViewController
+        
+        self.navigationController?.pushViewController(formViewController, animated: true)
+    }
+    
     func insertNewObject(sender: AnyObject) {
         let context = self.fetchedResultsController.managedObjectContext
         let entity = self.fetchedResultsController.fetchRequest.entity!
@@ -113,7 +119,7 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
         
         let fetchRequest = NSFetchRequest()
         // Edit the entity name as appropriate.
-        let entity = NSEntityDescription.entityForName("Event", inManagedObjectContext: self.managedObjectContext!)
+        let entity = NSEntityDescription.entityForName("Passwords", inManagedObjectContext: self.managedObjectContext!)
         fetchRequest.entity = entity
         
         // Set the batch size to a suitable number.
